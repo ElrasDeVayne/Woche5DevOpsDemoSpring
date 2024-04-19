@@ -17,14 +17,20 @@ public class LibraryTest {
 
     @Test
     void testSearchInEmptyLibrary() {
-    assertTrue(library.searchBooksByTitle("1984").isEmpty(), "Search in an empty library should return an empty list");
+        assertTrue(library.searchBooksByTitle("1984").isEmpty(), "Search in an empty library should return an empty list");
     }
 
     @Test
     void testFindBookByTitle() {
         library.addBook(new Book("1984", "George Orwell"));
         assertFalse(library.searchBooksByTitle("1984").isEmpty(), "Should find the book by title");
+    }
+    @Test
+    void testFindBookCaseInsensitive() {
+        library.addBook(new Book("1984", "George Orwell"));
+        assertFalse(library.searchBooksByTitle("1984").isEmpty(), "Should be case-insensitive");
 }
+
 
 
 
