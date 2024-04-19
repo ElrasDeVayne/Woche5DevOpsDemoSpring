@@ -13,6 +13,9 @@ public class Library {
     }
 
     public List<Book> searchBooksByTitle(String title) {
+        if (title == null || title.isEmpty()){
+            throw new IllegalArgumentException("Title cannot be null or empty");
+        }
         return books.stream()
                     .filter(book -> book.getTitle().equalsIgnoreCase(title))
                     .collect(Collectors.toList());
