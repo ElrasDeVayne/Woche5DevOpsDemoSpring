@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.util.List;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -66,6 +68,18 @@ public class LibraryTest {
         long duration = System.nanoTime() - startTime;
         assertTrue(duration < 1000000000, "Search should be performant and complete in under 1 second");
     }
+
+    @Test
+    void testSearchBooksWithPartialTitle() {
+        library.addBook(new Book("Harry Potter and the Sorcerer's Stone", "J.K. Rowling"));
+        library.addBook(new Book("Harry Potter and the Chamber of Secrets", "J.K. Rowling"));
+        library.addBook(new Book("A Brief History of Time", "Stephen Hawking"));
+    
+        List<Book> results = library.searchBooksByTitle("Harry Potter");
+        assertEquals(2, results.size(), "Should find all books that include 'Harry Potter' in the title");
+    }
+    
+
 
 
 

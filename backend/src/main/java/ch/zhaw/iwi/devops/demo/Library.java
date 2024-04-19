@@ -17,7 +17,7 @@ public class Library {
             throw new IllegalArgumentException("Title cannot be null or empty");
         }
         return books.stream()
-                    .filter(book -> book.getTitle().equalsIgnoreCase(title))
+                    .filter(book -> book.getTitle().toLowerCase().contains(title.toLowerCase()))
                     .collect(Collectors.toList());
     }
 }
