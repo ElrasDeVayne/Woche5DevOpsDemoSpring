@@ -54,7 +54,18 @@ public class LibraryTest {
     void testFindBookWithSpecialCharacters() {
         library.addBook(new Book("Les Misérables", "Victor Hugo"));
         assertFalse(library.searchBooksByTitle("Les Misérables").isEmpty(), "Should correctly handle titles with special characters");
-}
+    }
+
+    @Test
+    void testSearchBooksPerformance(){
+        for (int i = 0; i < 10000; i++) {
+            library.addBook(new Book("Book " + i, "Author " + i));
+        }
+        long startTime = System.nanoTime();
+        library.searchBooksByTitle("Book 9999");
+        long duration = System.nanoTime() - startTime;
+        assertTrue(duration < 1000000000, "Search should be performant and complete in under 1 second");
+    }
 
 
 
