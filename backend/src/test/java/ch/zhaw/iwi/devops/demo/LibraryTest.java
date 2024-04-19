@@ -29,7 +29,13 @@ public class LibraryTest {
     void testFindBookCaseInsensitive() {
         library.addBook(new Book("1984", "George Orwell"));
         assertFalse(library.searchBooksByTitle("1984").isEmpty(), "Should be case-insensitive");
-}
+    }
+    @Test
+    void testBookNotFound() {
+        library.addBook(new Book("Animal Farm", "George Orwell"));
+        assertTrue(library.searchBooksByTitle("1984").isEmpty(), "Should not find the book that isn't there");
+    }
+
 
 
 
