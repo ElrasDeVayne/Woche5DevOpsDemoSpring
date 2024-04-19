@@ -50,6 +50,13 @@ public class LibraryTest {
         assertThrows(IllegalArgumentException.class, () -> library.searchBooksByTitle(null), "Null title should throw IllegalArgumentException");
     }
 
+    @Test
+    void testFindBookWithSpecialCharacters() {
+        library.addBook(new Book("Les Misérables", "Victor Hugo"));
+        assertFalse(library.searchBooksByTitle("Les Misérables").isEmpty(), "Should correctly handle titles with special characters");
+}
+
+
 
 
 
