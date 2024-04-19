@@ -1,5 +1,6 @@
 package ch.zhaw.iwi.devops.demo;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -35,6 +36,14 @@ public class LibraryTest {
         library.addBook(new Book("Animal Farm", "George Orwell"));
         assertTrue(library.searchBooksByTitle("1984").isEmpty(), "Should not find the book that isn't there");
     }
+
+    @Test
+    void testFindMultipleCopiesOfTitle() {
+        library.addBook(new Book("1984", "George Orwell"));
+        library.addBook(new Book("1984", "George Orwell"));
+        assertEquals(2, library.searchBooksByTitle("1984").size(), "Should find multiple copies of the book");
+}
+
 
 
 
