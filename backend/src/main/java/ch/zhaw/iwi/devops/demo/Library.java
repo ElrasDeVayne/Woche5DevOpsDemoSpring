@@ -13,13 +13,14 @@ public class Library {
     }
 
     public List<Book> searchBooksByTitle(String title) {
-        if (title == null || title.isEmpty()){
+        if (title == null || title.trim().isEmpty()){
             throw new IllegalArgumentException("Title cannot be null or empty");
         }
         return books.stream()
                     .filter(book -> book.getTitle().toLowerCase().contains(title.toLowerCase()))
                     .collect(Collectors.toList());
     }
+    
 }
 
 
