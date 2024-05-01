@@ -6,10 +6,10 @@ public class OrderProcessor {
     private boolean isPremiumCustomer;
     private double[] itemPrices;
     private int[] itemQuantities;
-    private double totalPrice;
     private double discount;
 
     public void processOrder() {
+        double totalPrice;
         // Step 1: Validate order
         if (itemPrices == null || itemPrices.length == 0) {
             throw new IllegalArgumentException("Order is empty");
