@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class SimpleCalculatorTest {
 
     @Test
-    void testAdd() {
+    void add() {
         SimpleCalculator calculator = new SimpleCalculator();
         assertEquals(5, calculator.add(2, 3));
         assertEquals(-1, calculator.add(2, -3));

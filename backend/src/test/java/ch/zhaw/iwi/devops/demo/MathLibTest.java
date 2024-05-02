@@ -25,7 +25,7 @@ class MathLibTest {
     }
 
     @Test
-    public void testFibonacciIterative() {
+    void testFibonacciIterative() {
         assertEquals(0, mathlib.fibonacciIterative(0), "Fib(0) should be 0");
         assertEquals(1, mathlib.fibonacciIterative(1), "Fib(1) should be 1");
         assertEquals(1, mathlib.fibonacciIterative(2), "Fib(2) should be 1");
@@ -35,7 +35,7 @@ class MathLibTest {
     }
 
     @Test
-    public void testFibonacciRecursive() {
+    void testFibonacciRecursive() {
         assertEquals(0, mathlib.fibonacciRecursive(0), "Fib(0) should be 0");
         assertEquals(1, mathlib.fibonacciRecursive(1), "Fib(1) should be 1");
         assertEquals(1, mathlib.fibonacciRecursive(2), "Fib(2) should be 1");
