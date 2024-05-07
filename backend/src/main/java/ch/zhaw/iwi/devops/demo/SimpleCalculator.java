@@ -23,3 +23,4 @@ public class SimpleCalculator {
         return (double) a / b;
     }
 }
+
