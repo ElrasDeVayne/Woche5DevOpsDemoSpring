@@ -3,7 +3,6 @@ package ch.zhaw.iwi.devops.demo;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SimpleCalculatorTest {
 
@@ -39,6 +38,30 @@ class SimpleCalculatorTest {
             calculator.divide(6, 0);
         });
         assertEquals("Division by zero", exception.getMessage());
+    }
+
+        @Test
+    void testModulus() {
+        SimpleCalculator calculator = new SimpleCalculator();
+        assertEquals(1, calculator.modulus(7, 3));
+        assertEquals(0, calculator.modulus(6, 3));
+
+        // Test modulus by zero
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            calculator.modulus(6, 0);
+        });
+        assertEquals("Modulus by zero", exception.getMessage());
+    }
+
+    @Test
+    void testPower() {
+        SimpleCalculator calculator = new SimpleCalculator();
+        assertEquals(8, calculator.power(2, 3), 0.0001);
+        assertEquals(1, calculator.power(2, 0), 0.0001);
+        assertEquals(0.125, calculator.power(2, -3), 0.0001);
+
+        // Intentionally failing test
+        assertEquals(9, calculator.power(2, 3), 0.0001); // This will fail as 2^3 is 8, not 9
     }
  
 }

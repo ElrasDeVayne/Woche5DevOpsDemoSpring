@@ -22,5 +22,18 @@ public class SimpleCalculator {
         }
         return (double) a / b;
     }
+
+    // Adding modulus method
+    public int modulus(int a, int b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("Modulus by zero");
+        }
+        return a % b;
+    }
+
+    // Adding power method
+    public double power(int a, int b) {
+        return Math.pow(a, b);
+    }
 }
 
