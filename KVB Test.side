@@ -1,0 +1,150 @@
+{
+  "id": "afe8244b-2d7f-429c-bc20-b6be969090e4",
+  "version": "2.0",
+  "name": "KVB",
+  "url": "https://kvb.swiss",
+  "tests": [{
+    "id": "6f06da84-99a5-4621-a8f4-1008cfe43b52",
+    "name": "Mail absenden",
+    "commands": [{
+      "id": "0ebbb89f-386e-4d8c-8f39-8c2ca1cf9c98",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c686eb8-3790-4bbc-bd35-05e3a0fb62c0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1688x1041",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4765fb86-193c-446c-a927-ae13d4a316b4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7dbfa442-851b-455f-bc63-c60d4ee3595f",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='post-2035']/div/div[3]/div/div/div/div/div[2]/div/div/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e989589-9eb8-4cda-a2c1-6f474aa38f6f",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='post-2035']/div/div[3]/div/div/div/div/div[2]/div/div/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Kreshnik Sadriu"
+    }, {
+      "id": "a71d2414-4dd4-4605-8891-68a959b361d0",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=phone", "name"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='post-2035']/div/div[3]/div/div/div/div/div[2]/div/div/form/div/div/div[2]/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "0762220617"
+    }, {
+      "id": "22a85b37-24db-4f0b-b672-dcd856a75d4d",
+      "comment": "",
+      "command": "type",
+      "target": "id=email-address",
+      "targets": [
+        ["id=email-address", "id"],
+        ["name=email-address", "name"],
+        ["css=#email-address", "css:finder"],
+        ["xpath=//input[@id='email-address']", "xpath:attributes"],
+        ["xpath=//div[@id='post-2035']/div/div[3]/div/div/div/div/div[2]/div/div/form/div/div/div[3]/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "kreshnik@sadriu.ch"
+    }, {
+      "id": "f78ae5f7-e39f-4d62-81dc-b5b86fd01102",
+      "comment": "",
+      "command": "type",
+      "target": "id=subject",
+      "targets": [
+        ["id=subject", "id"],
+        ["name=subject", "name"],
+        ["css=#subject", "css:finder"],
+        ["xpath=//input[@id='subject']", "xpath:attributes"],
+        ["xpath=//div[@id='post-2035']/div/div[3]/div/div/div/div/div[2]/div/div/form/div/div/div[5]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/input", "xpath:position"]
+      ],
+      "value": "Ich schreibe Ihnen betreffend einem Test"
+    }, {
+      "id": "068d9904-e378-4842-a00e-d5719613da2b",
+      "comment": "",
+      "command": "type",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["name=message", "name"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//div[@id='post-2035']/div/div[3]/div/div/div/div/div[2]/div/div/form/div/div/div[5]/div/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Test Test"
+    }, {
+      "id": "32184671-dbd1-44a0-8609-40194087a666",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-xlarge > .fusion-button-text",
+      "targets": [
+        ["css=.button-xlarge > .fusion-button-text", "css:finder"],
+        ["xpath=//div[@id='post-2035']/div/div[3]/div/div/div/div/div[2]/div/div/form/div/div/div[5]/div/div[3]/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Senden Sie Ihre Anfrage')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41fe6fa7-d6cf-42b5-a870-8f6095bf47ba",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.success .fusion-alert-content",
+      "targets": [
+        ["css=.success .fusion-alert-content", "css:finder"],
+        ["xpath=//div[@id='fusion-notices-1']/div/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Thank you for your message. It has been sent.')]", "xpath:innerText"]
+      ],
+      "value": "Thank you for your message. It has been sent."
+    }]
+  }],
+  "suites": [{
+    "id": "2d2cfe86-ecf5-4bdd-9b5d-137ce49b5769",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6f06da84-99a5-4621-a8f4-1008cfe43b52"]
+  }],
+  "urls": ["https://kvb.swiss/"],
+  "plugins": []
+}

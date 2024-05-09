@@ -1,0 +1,93 @@
+{
+  "id": "a9b2a9b8-047b-4da4-b92e-14726cdbf147",
+  "version": "2.0",
+  "name": "AXA Privatkunde",
+  "url": "https://www.axa.ch",
+  "tests": [{
+    "id": "cd4735f1-799f-4eb9-b546-2242e69c9ebe",
+    "name": "Linktesten",
+    "commands": [{
+      "id": "ef464549-b9dc-43ce-b73b-d59d21486363",
+      "comment": "",
+      "command": "open",
+      "target": "/en/private-customers.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8b49c34-ec98-405e-8e3a-2d1b9db1d1cb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1688x1041",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0bde607-53a4-48cf-9172-37b3de4d7e80",
+      "comment": "",
+      "command": "click",
+      "target": "css=.m-header-navigation__list-item:nth-child(4) > .m-header-navigation__list-link",
+      "targets": [
+        ["css=.m-header-navigation__list-item:nth-child(4) > .m-header-navigation__list-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact & services')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/en/private-customers/contact-services.html')]", "xpath:href"],
+        ["xpath=//div[2]/div/nav/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c59b4fb4-a114-4ab6-abe1-ce19251256e6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=General contact",
+      "targets": [
+        ["linkText=General contact", "linkText"],
+        ["css=.m-header-navigation__list-item:nth-child(4) .m-header-sub-navigation__block:nth-child(1) .m-header-sub-navigation__list-item:nth-child(1) > .m-header-sub-navigation__link", "css:finder"],
+        ["xpath=//a[contains(text(),'General contact')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/en/private-customers/contact-services/contact/general-contact.html')]", "xpath:href"],
+        ["xpath=//li[4]/div/div[2]/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'General contact')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2da26eef-8799-49db-b299-58b9389a7fa8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=“General contact”",
+      "targets": [
+        ["linkText=“General contact”", "linkText"],
+        ["css=.m-text:nth-child(3) b > a", "css:finder"],
+        ["xpath=//a[contains(text(),'“General contact”')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#general')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/p[2]/b/a", "xpath:position"],
+        ["xpath=//a[contains(.,'“General contact”')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c282936b-25a0-4d2e-a729-0625be596a89",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,5282.5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b76f7980-b526-4d55-a55d-ba2d233dd949",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(1) > b",
+      "targets": [
+        ["css=li:nth-child(1) > b", "css:finder"],
+        ["xpath=//li/b", "xpath:position"],
+        ["xpath=//b[contains(.,'AXA 24-hour helpline:')]", "xpath:innerText"]
+      ],
+      "value": "AXA 24-hour helpline:"
+    }]
+  }],
+  "suites": [{
+    "id": "438289e6-9c4d-4864-83ab-9d8427bfa324",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cd4735f1-799f-4eb9-b546-2242e69c9ebe"]
+  }],
+  "urls": ["https://www.axa.ch/"],
+  "plugins": []
+}

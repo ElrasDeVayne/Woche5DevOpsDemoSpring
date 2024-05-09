@@ -1,0 +1,141 @@
+{
+  "id": "227e4ed1-fbcc-4cc4-bd30-5f070a5e42a8",
+  "version": "2.0",
+  "name": "Zürich Marathon",
+  "url": "https://www.zuerichmarathon.ch",
+  "tests": [{
+    "id": "0d9ffce2-d277-4b30-a42e-e937f36677fe",
+    "name": "Linktesten",
+    "commands": [{
+      "id": "f19a5eff-7419-4dd2-aaf8-997eb6f88067",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "188819a3-fe80-4036-9cd7-5cf7407d066d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1688x1047",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6afe1197-5785-4273-853f-19cc3472cc92",
+      "comment": "",
+      "command": "click",
+      "target": "css=#w-dropdown-toggle-3 > .icon-11",
+      "targets": [
+        ["css=#w-dropdown-toggle-3 > .icon-11", "css:finder"],
+        ["xpath=//div[@id='w-dropdown-toggle-3']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/nav/div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf2337a9-a065-4a22-8c0d-590dbddf891f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Verpflegung",
+      "targets": [
+        ["linkText=Verpflegung", "linkText"],
+        ["css=#w-dropdown-list-3 > .menu-dropdown-link:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Verpflegung')]", "xpath:link"],
+        ["xpath=//nav[@id='w-dropdown-list-3']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/runner-prep/verpflegung')]", "xpath:href"],
+        ["xpath=//div[2]/nav/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Verpflegung')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c6252f4-6323-41a5-acc4-342a208d9470",
+      "comment": "",
+      "command": "click",
+      "target": "id=w-dropdown-toggle-11",
+      "targets": [
+        ["id=w-dropdown-toggle-11", "id"],
+        ["css=#w-dropdown-toggle-11", "css:finder"],
+        ["xpath=//div[@id='w-dropdown-toggle-11']", "xpath:attributes"],
+        ["xpath=//div[3]/div/nav/div[2]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbe658a1-9c32-40ab-9c78-a6dff82d126b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#w-dropdown-list-11 > .menu-dropdown-link",
+      "targets": [
+        ["css=#w-dropdown-list-11 > .menu-dropdown-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Runners Week')])[2]", "xpath:link"],
+        ["xpath=//nav[@id='w-dropdown-list-11']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/runners-week/runners-week')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/nav/div[2]/div[3]/nav/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c85e8319-b32b-433b-af4c-4ba7d56d4807",
+      "comment": "",
+      "command": "click",
+      "target": "css=#w-dropdown-toggle-12 > .icon-11",
+      "targets": [
+        ["css=#w-dropdown-toggle-12 > .icon-11", "css:finder"],
+        ["xpath=//div[@id='w-dropdown-toggle-12']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f571b3a8-9727-4eca-a19a-3dd7e91006f1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Strassensperrungen",
+      "targets": [
+        ["linkText=Strassensperrungen", "linkText"],
+        ["css=.menu-dropdown-link:nth-child(7)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Strassensperrungen')])[2]", "xpath:link"],
+        ["xpath=//nav[@id='w-dropdown-list-12']/a[6]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/infos/strassensperrungen')]", "xpath:href"],
+        ["xpath=//div[4]/nav/a[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "881bc990-c4ec-4375-829a-2b42e35a9a53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.section-transparent > .text-body:nth-child(2)",
+      "targets": [
+        ["css=.section-transparent > .text-body:nth-child(2)", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66e1a717-7db3-4bff-b829-2cc583444b41",
+      "comment": "",
+      "command": "click",
+      "target": "css=.section-transparent > .title",
+      "targets": [
+        ["css=.section-transparent > .title", "css:finder"],
+        ["xpath=//body/div/h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af26ac71-41ea-4719-96b7-ebbe43f6df31",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.section-grey > .title",
+      "targets": [
+        ["css=.section-grey > .title", "css:finder"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "ÖFFENTLICHER VERKEHR"
+    }]
+  }],
+  "suites": [{
+    "id": "2c9d29ce-3e2b-4d43-8668-69ce0ce55582",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0d9ffce2-d277-4b30-a42e-e937f36677fe"]
+  }],
+  "urls": ["https://www.zuerichmarathon.ch/"],
+  "plugins": []
+}
